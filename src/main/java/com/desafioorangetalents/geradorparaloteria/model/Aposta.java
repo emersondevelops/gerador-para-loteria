@@ -24,7 +24,7 @@ public class Aposta {
     @ManyToOne
     private Apostador apostador;
 
-    public static String gerarNumeros() {
+    private String gerarNumeros() {
         Random random = new Random();
         return random
                 .ints(1, 61)
